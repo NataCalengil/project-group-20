@@ -39,10 +39,10 @@
   --blue: #1F212D;
 }
 
-a{
-  color: var(--white-color);
-}
-
 body{
   background-color: var(--dark-blue);
+}
+
+.nav-link{
+  color: var(--white-color);
 }
