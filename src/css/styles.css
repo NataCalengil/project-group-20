@@ -43,6 +43,6 @@ body{
   background-color: var(--dark-blue);
 }
 
-.nav-link{
+.nav-item{
   color: var(--white-color);
 }
