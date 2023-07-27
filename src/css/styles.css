@@ -21,7 +21,7 @@
   font-weight: 500;
 
   color: var(--white-color);
-  background: #11131F;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -37,7 +37,12 @@
   --hover-btn-color: #88B3B9;
   --dark-blue: #11131F;
   --blue: #1F212D;
+}
 
+a{
+  color: var(--white-color);
+}
 
-
+body{
+  background-color: var(--dark-blue);
 }
