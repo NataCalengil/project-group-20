@@ -1,3 +1,5 @@
+import './js/swiper';
+
 // Top button
 window.onscroll = () => {
     toggleTopButton();
