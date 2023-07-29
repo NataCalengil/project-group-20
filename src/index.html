@@ -5,9 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yacht Adventures</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -15,14 +18,13 @@
     <load src="partials/header.html" />
 
     <main>
-
       <!-- Bogdan Snisarchuk -->
       <load src="partials/hero.html" />
 
       <!-- ... -->
       <load src="partials/about.html" />
 
-      <!-- Elshan Guliiev -->
+      <!-- Elshan Huliiev -->
       <load src="partials/yahts.html" />
 
       <!-- ... -->
@@ -32,36 +34,18 @@
       <load src="partials/rent.html" />
 
       <!-- Pol Li -->
-      <load src="partials/reviews.html" />
+
       <button class="btn btn-sm btn-primary rounded-circle position-fixed bottom-0 end-0 translate-middle d-none" onclick="scrollToTop()" id="back-to-up">
         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
           <rect width="44" height="44" rx="8" fill="#93ABAE"/>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M18 18.8889L22 14L26 18.8889H22.6928V30H21.3072V18.8889H18Z" fill="#F6F5EF"/>
           </svg>
       </button>
+
     </main>
     <!-- Прядко Марія -->
     <load src="partials/footer.html" />
     
-   
-<script>
-  // Top button
-window.onscroll = () => {
-    toggleTopButton();
-  }
-  function scrollToTop(){
-    window.scrollTo({top: 0, behavior: 'smooth'});
-  }
-  
-  function toggleTopButton() {
-    if (document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20) {
-      document.getElementById('back-to-up').classList.remove('d-none');
-    } else {
-      document.getElementById('back-to-up').classList.add('d-none');
-    }
-  } 
-  </script>
     <script type="module" src="/main.js"></script>
 
   </body>
