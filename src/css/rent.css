@@ -39,6 +39,25 @@
     min-height: 58px;
 }
 
+.form-btn{
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.63px;
+    background: transparent;
+
+    border-radius: 60px;
+    border: 1px solid var(--white-color);
+    padding: 14px 28px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), ;
+}
+
+.form-btn:is(:hover, :focus) {
+    border: 1px solid var(--light-green);
+    color: var(--light-green);
+  }
+
 
 
 @media screen and (min-width: 768px) {
