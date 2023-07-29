@@ -36,21 +36,23 @@
 
 
 @media screen and (min-width: 768px) {
+    .services{
+        padding:50px 0;
+    }
+    .services-div{
+        width: 704px;
+    }
+    .services-fis{
+        width: 400px;
 
-.services-div{
-    width: 704px;
-}
-.services-fis{
-    width: 400px;
-
-}
-.services-sun{
-    width: 380px;
-}
-.services-btn{
-    bottom: 32px;
-    left: 32px;
-}
+    }
+    .services-sun{
+        width: 380px;
+    }
+    .services-btn{
+        bottom: 32px;
+        left: 32px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -58,4 +60,8 @@
         flex-direction: row;
         align-items: baseline;
 }
+    .services{
+        padding:82px 0;
+    }
+
 }
