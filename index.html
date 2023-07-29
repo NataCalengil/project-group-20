@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,500&display=swap" rel="stylesheet">
     
-    <script type="module" crossorigin src="/project-group-20/assets/index-6c68578c.js"></script>
-    <link rel="stylesheet" href="/project-group-20/assets/index-b2904542.css">
+    <script type="module" crossorigin src="/project-group-20/assets/index-1b8f828f.js"></script>
+    <link rel="stylesheet" href="/project-group-20/assets/index-3d96eef0.css">
   </head>
   <body>
     <!-- -->
@@ -117,10 +117,56 @@
                     width="259"
                 />
             </div>  
-            <form class="form">
-                
+            <form class="form" action="#" method="post">
+                <div class="form-field">
+                  <label class="form-label" for="user-name">Full Name</label>
+                  <div class="form-item">
+                    <input
+                      class="form-input"
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-field">
+                    <label class="form-label" for="mail">Email</label>
+                    <div class="form-item">
+                      <input
+                        class="form-input"
+                        type="email"
+                        name="user-email"
+                        id="mail"
+                        required
+                      />
+                    </div>
+                  </div>
 
-            </form>
+                <div class="form-field">
+                  <label class="form-label" for="phone">Phone number</label>
+                  <div class="form-item">
+                    <input
+                      class="form-input"
+                      type="tel"
+                      name="user-phone"
+                      id="phone"
+                      required
+                    />
+                  </div>
+                </div>
+                
+                <div class="form-field">
+                  <label class="form-label" for="user-comment">Comment</label>
+                  <textarea
+                    class="form-textarea"
+                    name="user-comment"
+                    id="user-comment"
+                  ></textarea>
+                </div>
+                
+                <button class="form-btn btn" type="submit">Send</button>
+              </form>
              
         </div>  
     </div>
