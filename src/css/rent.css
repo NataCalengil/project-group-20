@@ -57,7 +57,6 @@
     padding: 14px 28px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-btn:is(:hover, :focus) {
     border: 1px solid var(--light-green);
     color: var(--light-green);
