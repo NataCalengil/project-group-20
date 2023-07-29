@@ -1,4 +1,4 @@
-import './js/swiper';
+import '/js/swiper';
 
 // Top button
 window.onscroll = () => {
