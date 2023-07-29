@@ -24,3 +24,38 @@ ol {
     text-decoration: none;
 }
 
+.yahts {}
+
+.yaht-container {}
+
+.yaht-list {
+    width: 335px;
+    height: 469px;
+    background-color: var(#1F212D);
+    border-radius: 24px;
+    padding: 18px;
+}
+
+.yaht-item {}
+
+.yaht-img {}
+
+.yaht-text-container {}
+
+.yaht-name {
+    color: var(#F6F5EF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.92;
+    letter-spacing: -0.72px;
+}
+
+.yaht-text {
+    color: var(#F6F5EF);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42;
+    letter-spacing: 0.36px;
+}
