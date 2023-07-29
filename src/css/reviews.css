@@ -4,8 +4,17 @@
 }
 
 .reviews-list {
+    gap: 25px;
     text-align: center;
     display: flex;
+}
+.img{
+    display: unset;
+
+}
+.im-reviews{
+    border-radius: 50%;
+    position: absolute;
 }
 
 .reviews-item {
