@@ -24,23 +24,73 @@ ol {
     text-decoration: none;
 }
 
+/* YAHTS */
+
 .yahts {}
 
 .yaht-container {}
 
+.yaht-button-container {
+    width: 882px;
+    margin: 0 auto;
+    padding-bottom: 164px;
+}
+
+.yach-button {
+    border-radius: 60px;
+    border: 1px solid var(--white, #F6F5EF);
+    padding: 14px 28px;
+    background-color: #11131F;
+    color: #F6F5EF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+ 
+.yach-button:hover {
+    border-color: #93ABAE;
+    color: #93ABAE;
+}
+
+.yach-button:focus {
+    border-color: #93ABAE;
+    color: #93ABAE;
+}
+
+.yaht-titel {
+    font-family: DM Sans;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    max-width: 882px;
+    margin-bottom: 64px;
+}
+
 .yaht-list {
+    gap: 16px;
+}
+
+.yaht-item {
     width: 335px;
-    height: 469px;
-    background-color: var(#1F212D);
+    background-color: #1F212D;
     border-radius: 24px;
     padding: 18px;
 }
 
-.yaht-item {}
+.yaht-img {
+    border-radius: 24px;
+    width: 100%;
+    margin-bottom: 32px;
+}
 
-.yaht-img {}
-
-.yaht-text-container {}
+.yaht-text-container {
+    display: flex;
+    align-items: baseline;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-bottom: 32px;
+}
 
 .yaht-name {
     color: var(#F6F5EF);
@@ -58,4 +108,35 @@ ol {
     font-weight: 400;
     line-height: 1.42;
     letter-spacing: 0.36px;
+    margin-left: auto;
+}
+
+.char-container {
+    display: flex;
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+
+.char-list {
+    gap: 6px;
+    margin-right: 32px;
+}
+
+.char-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.char-item-right {
+    display: flex;
+    justify-content: end;
+}
+
+.char-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.65;
+    letter-spacing: 0.42px;
+    color: #F6F5EF;
 }
