@@ -1,45 +1,4 @@
 /* Прядко Марія */
-:root {
-    --bl-color: #11131F;
-    --bg-colorrr: #1F212D;
-    --skii-color: #93ABAE;
-    --gradient-colors: #BEC7C2 #A1B5BA;
-    --text-color: #F6F5EF;
-}
-
-
-img {
-    display: block;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    background-color: var(--white-color);
-    color: var(--text-color);
-}
-
-.link {
-    text-decoration: none;
-}
-
-.list {
-    list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-    margin: 0;
-}
-
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
-
 
 /*footer*/
 
