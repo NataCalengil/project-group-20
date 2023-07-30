@@ -1,5 +1,3 @@
-import '/js/swiper.js';
-import '/js/mobile-menu.js';
 
 // Top button
 window.onscroll = () => {
@@ -19,27 +17,5 @@ window.onscroll = () => {
     }
   }
 
-/* Swiper slider */
 
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
 

@@ -77,7 +77,8 @@ body {
 .container {
   width: 100%;
   padding: 0 20px;
-  margin: 0 auto;
+  margin:0 auto;
+  
 }
 .btn-top .btn {
   border: 0;
@@ -94,12 +95,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280;
+    max-width: 1280px;
   }
 }
