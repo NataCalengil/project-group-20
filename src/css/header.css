@@ -145,7 +145,7 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 24px;
+  top: 29px;
   right: 20px;
   color: var(--white);
 }
@@ -173,4 +173,7 @@
   padding: 14px;
   color: var(--white);
   text-decoration: none;
+}
+.menu-border {
+  border-bottom: 2px solid gray;
 }
