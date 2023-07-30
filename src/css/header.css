@@ -3,12 +3,7 @@
 .header {
   padding: 24px 20px;
 }
-@media screen and (min-width: 768px) {
-  .header {
-    padding: 32px 32px;
-  }
-}
-/*.container {
+.heder-container {
   min-width: 320px;
   max-width: 375px;
   margin-left: auto;
@@ -16,64 +11,70 @@
   padding: 24px 20px;
   outline: 2px solid red;
   outline-offset: -2px;
-}*/
+  border: 5px red;
+}
+.heder-link-logo {
+}
+.heder-link-logo {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.heder-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.img-logo {
+  display: inline-block;
+}
 /* Tablet screen */
-@media screen and (min-width: 768px) {
- /* .container {
-    padding: 32px 32px;
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-  }*/
-}
-/* Desktop screen */
-@media only screen and (min-width: 1280px) {
- /* .container {
-    max-width: 1216px;
-    padding: 32px 32px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}*/
-.header {
-  width: 1280px;
-  padding: 32px 32px;
-  margin-left: auto;
-  margin-right: auto;
-}
-} 
-@media only screen and (min-width: 768px) {
-  .heder-nav {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .heder-nav {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .heder-nav-list {
-    display: flex;
-    gap: 24px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .heder-nav-list {
-    display: flex;
-    gap: 24px;
-  }
-}
 @media only screen and (max-width: 767px) {
   .heder-nav-list {
     display: none;
   }
 }
-.heder-link:hover,
-.heder-link:focus {
-  color: #747bff;
+@media screen and (min-width: 768px) {
+  .heder-container {
+    padding: 32px 32px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header {
+    padding: 32px 32px;
+  }
+  .heder-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .heder-nav-list {
+    display: flex;
+    gap: 24px;
+  }
+}
+/* Desktop screen */
+@media only screen and (min-width: 1280px) {
+  .heder-container {
+    max-width: 1216px;
+    padding: 32px 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .heder-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .heder-nav-list {
+    display: flex;
+    gap: 24px;
+  }
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -82,7 +83,7 @@
 .heder-link-logo {
   color: var(--white, #f6f5ef);
   font-family: DM Sans;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 118%; /* 16.52px */
@@ -102,20 +103,21 @@
 .menu-toggle-icon {
   stroke: red;
 }
-/* Mobile menu */
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  margin: 0;
+/* Mobile menu  */
+.menu-toggle {
+  min-height: 24px;
+  min-width: 24px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  /* margin: 0; */
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   outline: none;
 }
 
@@ -137,9 +139,9 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  /* background-color: #3f51b5; */
   z-index: 999;
-
+  background: var(--dark-blue, #11131f);
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -150,8 +152,8 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 24px;
+  right: 20px;
   color: #fff;
 }
 
@@ -159,12 +161,23 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 212px;
 }
-
+.mobile-link-item {
+  color: var(--white, #f6f5ef);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 118%; /* 16.52px */
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
 .mobile-menu .link {
   display: block;
-  padding: 10px;
+  padding: 14px;
   color: #fff;
   text-decoration: none;
 }
-

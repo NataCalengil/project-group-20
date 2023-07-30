@@ -2,9 +2,19 @@
   <div class="container heder-container">
     <nav class="heder-nav">
       <a class="heder-link heder-link-logo" href="./index.html">
-        <img src="./img/header/header-logo.svg" alt="logo" />
+        <img class="img-logo" src="./img/header/header-logo.svg" alt="logo" />
         YACHT ADVENTURES</a
       >
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <img src="./img/header/hamburger-menu.svg" alt="menu" />
+        <!-- <svg class="menu-toggle-icon" width="24" height="24">
+          <use href="/src/img/header/hamburger-menu.svg"></use>
+        </svg> -->
+      </button>
       <ul class="heder-nav-list">
         <li class="heder-nav-item">
           <a href="#about" class="nav-link">About</a>
@@ -16,18 +26,6 @@
           <a href="#reviews" class="nav-link">Reviews</a>
         </li>
       </ul>
-      <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg class="menu-toggle-icon" width="24" height="24">
-          <use href="/src/img/heder/icon.svg#icon-gg_menu"></use>
-        </svg>
-      </button>
-      
-      <img src="./img/header/hamburger-menu.svg" alt="menu" />
-
     </nav>
   </div>
 </header>
@@ -48,12 +46,14 @@
       ></path>
     </svg>
   </button>
-
-  <ul class="mobile-menu">
-    <li><a href="" class="link">About</a></li>
-    <li><a href="" class="link">Products</a></li>
-    <li><a href="" class="link">Contacts</a></li>
-    <li><a href="" class="link">Career</a></li>
+  <a class="heder-link heder-link-logo" href="./index.html">
+    <img class="img-logo" src="./img/header/header-logo.svg" alt="logo" />
+    YACHT ADVENTURES</a
+  >
+  <ul class="mobile-menu mobile-menu-list">
+    <li><a href="" class="link mobile-link-item">About</a></li>
+    <li><a href="" class="link mobile-link-item">Yahts</a></li>
+    <li><a href="" class="link mobile-link-item">Reviews</a></li>
   </ul>
 </div>
 <script
