@@ -1,67 +1,70 @@
-/* Services */
+/* Services sections */
 
-.services{
-    padding:40px 0;
+.services {
+  padding: 40px 0;
 }
-.services-list{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
-.services-item{
-    display: block;
-    position: relative;
+.services-item {
+  display: flex;
+  position: relative;
 }
-.services-btn{
-    position:absolute;
-    bottom: 24px;
-    left:24px;
+.services-btn {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
 
-    border: none;
-    border-radius: 60px;
-    background: var(--white-color);
-    padding: 14px 28px;
+  border: none;
+  border-radius: 60px;
+  background: var(--white-color);
+  padding: 14px 28px;
 
-    font-size: 14px;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: -0.63px;
-    line-height: 1.1;
-    color: var(--dark-blue);
-
+  font-size: 14px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.63px;
+  line-height: 1.1;
+  color: var(--dark-blue);
 }
-
 
 @media screen and (min-width: 768px) {
-    .services{
-        padding:50px 0;
-    }
-    .services-div{
-        width: 704px;
-    }
-    .services-fis{
-        width: 400px;
-
-    }
-    .services-sun{
-        width: 380px;
-    }
-    .services-btn{
-        bottom: 32px;
-        left: 32px;
-    }
+  .services {
+    padding: 50px 0;
+  }
+  .services-list {
+    gap: 32px;
+  }
+  .services-list li:nth-child(2) {
+    margin-left: auto;
+  }
+  .services-div {
+    width: 704px;
+  }
+  .services-fis {
+    width: 400px;
+  }
+  .services-sun {
+    width: 380px;
+  }
+  .services-btn {
+    bottom: 32px;
+    left: 32px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .services-list{
-        flex-direction: row;
-        align-items: baseline;
-}
-    .services{
-        padding:82px 0;
-    }
-
+  .services-list {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 64px;
+  }
+  .services {
+    padding: 82px 0;
+  }
 }

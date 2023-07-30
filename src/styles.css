@@ -1,0 +1,105 @@
+/*  Fonts */
+@import url('./css/reset.css');
+@import url('./css/header.css');
+@import url('./css/hero.css');
+@import url('./css/about.css');
+@import url('./css/yahts.css');
+@import url('./css/services.css');
+@import url('./css/rent.css');
+@import url('./css/reviews.css');
+@import url('./css/footer.css');
+
+/* Fonts */
+
+@font-face {
+  font-display: swap;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/dm-sans-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/dm-sans-v14-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/dm-sans-v14-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/dm-sans-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/dm-sans-v14-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  font-family: 'DM Sans';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--white-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Colors */
+
+  --white-color: #f6f5ef;
+  --linear-gradient: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+  --light-green: #93abae;
+  --hover-btn-color: #88b3b9;
+  --dark-blue: #11131f;
+  --blue: #1f212d;
+}
+
+/* General style */
+
+body {
+  background-color: var(--dark-blue);
+}
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.btn-top .btn {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+.btn-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+/* Media requests */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280;
+  }
+}
