@@ -5,81 +5,97 @@
     <link rel="icon" type="image/svg+xml" href="/project-group-20/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yacht Adventures</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
     
-    <script type="module" crossorigin src="/project-group-20/assets/index-c31c203d.js"></script>
-    <link rel="stylesheet" href="/project-group-20/assets/index-c7b69fd4.css">
+    <script type="module" crossorigin src="/project-group-20/assets/index-92b19707.js"></script>
+    <link rel="stylesheet" href="/project-group-20/assets/index-984b6d9d.css">
   </head>
   <body>
     <!-- L-Lecha Iwanov -->
     <header class="header">
-  <div class="container heder-container">
-    <nav class="heder-nav">
-      <a class="heder-link heder-link-logo" href="./index.html">
+  <div class="container">
+    <div class="top-header">
+      <a class="header-link header-link-logo" href="./index.html">
         <img src="/project-group-20/assets/header-logo-5339a281.svg" alt="logo" />
+        <!--Сюди додати кораблик + текст як одна свr-->
         YACHT ADVENTURES</a
       >
-      <ul class="heder-nav-list">
-        <li class="heder-nav-item">
-          <a href="#about" class="nav-link">About</a>
-        </li>
-        <li class="heder-nav-item">
-          <a href="#yachts" class="nav-link">Yahts</a>
-        </li>
-        <li class="heder-nav-item">
-          <a href="#reviews" class="nav-link">Reviews</a>
-        </li>
-      </ul>
-      <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <svg class="menu-toggle-icon" width="24" height="24">
-          <use href="/src/img/heder/icon.svg#icon-gg_menu"></use>
-        </svg>
-      </button>
-      
-      <img src="/project-group-20/assets/hamburger-menu-a4ad3d92.svg" alt="menu" />
+      <div class="hamburger-menu menu-toggle js-open-menu">
+        <!--Сюди додати свг бургера і цей коментар видаліть-->
+        <img src="/project-group-20/assets/hamburger-menu-a4ad3d92.svg" alt="menu" />
+      </div>
 
-    </nav>
+      <nav class="header-nav">
+        <ul class="header-nav-list list">
+          <li class="header-nav-item">
+            <!--Сюди додати id якір але id має мати назву не таку як клас-->
+            <a class="header-nav-link link main-text" href="/">About</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link link main-text" href="/">Yachts</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link link main-text" href="/">Rewiews</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
-<!-- Mobile menu -->
 <div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-toggle js-close-menu">
-    <svg
-      fill="currentColor"
-      viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+  <div class="hamburger-logo">
+    <a class="header-link header-link-logo" href="./index.html">
+      <img src="/project-group-20/assets/header-logo-5339a281.svg" alt="logo" />
+      <!--Сюди додати кораблик + текст як одна свr-->
+      YACHT ADVENTURES</a
     >
-      <path
-        fill-rule="evenodd"
-        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-        clip-rule="evenodd"
-      ></path>
-    </svg>
-  </button>
-
-  <ul class="mobile-menu">
-    <li><a href="" class="link">About</a></li>
-    <li><a href="" class="link">Products</a></li>
-    <li><a href="" class="link">Contacts</a></li>
-    <li><a href="" class="link">Career</a></li>
-  </ul>
+    <button class="menu-toggle js-close-menu">
+      X
+      <!--Сюди додати свг закриваючого меню (хрестик) і цей коментар видаліть-->
+    </button>
+  </div>
+  <div class="hamburger-mobile-content">
+    <ul class="mobile-menu">
+      <li>
+        <a href="/" class="link hamburger-nav-link">About</a>
+      </li>
+      <li>
+        <a href="/" class="link hamburger-nav-link">Yachts</a>
+      </li>
+      <li><a href="/" class="link hamburger-nav-link">Reviews</a></li>
+    </ul>
+  </div>
 </div>
-<script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"
-></script>
-<script defer src="/js/mobile-menu.js"></script>
+
+<script>
+  (() => {
+    const mobileMenu = document.querySelector('.js-menu-container');
+    const openMenuBtn = document.querySelector('.js-open-menu');
+    const closeMenuBtn = document.querySelector('.js-close-menu');
+
+    const toggleMenu = () => {
+      const isMenuOpen =
+        openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
+
+      const scrollLockMethod = !isMenuOpen
+        ? 'disableBodyScroll'
+        : 'enableBodyScroll';
+      bodyScrollLock[scrollLockMethod](document.body);
+    };
+
+    openMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
+
+    // Close the mobile menu on wider screens if the device orientation changes
+    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+      bodyScrollLock.enableBodyScroll(document.body);
+    });
+  })();
+</script>
 
 
     <main>
@@ -441,7 +457,7 @@
 </section>
 
       <!--Button Top -->
-      <div class="btn-top container">
+      <div class="btn-top">
         <button
           class="btn btn-sm btn-primary rounded-circle position-fixed bottom-0 end-0 translate-middle d-none"
           onclick="scrollToTop()"
@@ -567,7 +583,6 @@
             
             </footer>
      
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     
   </body>
 </html>
