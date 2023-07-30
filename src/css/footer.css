@@ -1,1 +1,402 @@
 /* Прядко Марія */
+
+
+/*footer*/
+
+.footer-container {
+    display: flex;
+    gap: 24px;
+    /*margin-bottom: 100px;*/
+    padding-left: 165px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    /*line-height: 118%;*/
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+
+
+
+.footer-img {
+    width: 22.588px;
+    height: 23px;
+}
+
+.media {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-menu-container {
+    display: flex;
+    gap: 24px;
+    /*margin-bottom: 100px;*/
+    padding-left: 165px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    /*line-height: 118%;*/
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-menu-text {
+    text-decoration: none;
+    fill: var(--white, #F6F5EF);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*
+.footer-menu-container {
+
+добавляет палку мелкую но она стоит под about yahct reviews
+    border-bottom: 1px solid #F6F5EF33;
+
+     если что поменять маржинна 100 будет чуть внизу но с бекраундом
+    margin-bottom: 35px;
+}*/
+
+p {
+    margin: 10px;
+}
+
+
+.footer-form-dn {
+    display: inline;
+    margin: 481px;
+    size: 14px;
+    color: rgba(246, 245, 239, 0.50);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 118%;*/
+    letter-spacing: 0.42px;
+}
+
+.from-dn1 {
+    height: 17px;
+    width: 95px;
+    display: inline;
+}
+
+.from-dn2 {
+    height: 17px;
+    width: 95px;
+    display: inline;
+}
+
+
+
+.footer-menu-text {
+    color: var(--white, #F6F5EF);
+}
+
+
+.footer-social {
+
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans;
+    padding-left: 300px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.social-footer {
+    display: flex;
+    gap: 16px;
+}
+
+@media screen and (max-width: 767.8px) {
+    .footer-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer-media {
+        margin-right: 120px;
+    }
+}
+
+@media screen and (max-width: 767.8px) {
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 72px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-footer {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157.8px) {
+    .container-footer {
+        max-width: 582px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 72px 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container-footer {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer {
+
+
+
+    background-color: var(--bg-colorrr);
+    /*padding: 96px 0;*/
+    display: block;
+}
+
+@media screen and (min-width: 1158px) {
+    .footer {
+        padding: 100px 0;
+    }
+}
+
+.footer-logo {
+    /* убрать дисплей*/
+    display: flex;
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%;
+    /* 21.24px */
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    /*
+    margin-bottom: 16px;
+    color: var(--text-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: inline-block;*/
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--team-color);
+    width: 264px;
+}
+
+.footer-studio {
+    color: var(--team-color);
+}
+
+@media screen and (min-width: 1158px) {
+    .footer-subscribe-div {
+        margin-left: auto;
+    }
+}
+
+.footer-subscribe-p {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767.8px) {
+    .footer-subscribe-p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767.8px) {
+    .footer-form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-form {
+        gap: 24px;
+        display: flex;
+    }
+}
+
+.footer-subscribe-input {
+    width: 264px;
+    height: 40px;
+    outline: transparent;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.48px;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-subscribe-input::placeholder {
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 767.8px) {
+    .footer-subscribe-input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-subscribe-label {
+        margin-bottom: 16px;
+    }
+}
+
+.footer-subscribe-svg {
+    margin-left: 16px;
+    fill: var(--white-color);
+}
+
+.footer-subscribe-button {
+    max-width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    background: var(--akcent-color);
+    color: var(--white, #fff);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    cursor: pointer;
+    letter-spacing: 0.64px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+@media screen and (max-width: 767.8px) {
+    .footer-subscribe-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+    background-color: var(--nav-color);
+}
+
+
+
+
+
+.footer-logo link {
+    width: 185.866px;
+    height: 13.032px;
+    fill: var(--white, #F6F5EF);
+}
+
+
+
+
+
+
+
+
+
+.social-svg {
+    /* из за маржина 13 пикселей полетел тест яхт адентерс*/
+    margin-left: 13px;
+    width: 35px;
+    height: 35px;
+    fill: var(--team-color);
+}
+
+
+
+.social {
+    width: 40px;
+    height: 40px;
+    stroke-width: 1px;
+    stroke: rgba(246, 245, 239, 0.50);
+    /*
+    border-radius: 50%;
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;*/
+}
