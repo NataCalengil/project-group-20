@@ -99,10 +99,6 @@
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.menu-toggle-icon {
-  stroke: red;
-}
-
 /* Mobile menu  */
 .menu-toggle {
   min-height: 24px;
