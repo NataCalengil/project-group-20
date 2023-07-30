@@ -1,9 +1,11 @@
-import '/js/swiper';
+import '/js/swiper.js';
+import '/js/mobile-menu.js';
 
 // Top button
 window.onscroll = () => {
     toggleTopButton();
   }
+  
   function scrollToTop(){
     window.scrollTo({top: 0, behavior: 'smooth'});
   }
