@@ -28,12 +28,15 @@ ol {
 
 .yahts {}
 
-.yaht-container {}
+.yaht-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 335px;
+}
 
 .yaht-button-container {
-    width: 882px;
     margin: 0 auto;
-    padding-bottom: 164px;
+    padding-bottom: 80px;
 }
 
 .yach-button {
@@ -58,17 +61,16 @@ ol {
 }
 
 .yaht-titel {
-    font-family: DM Sans;
-    font-size: 100px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.1;
-    max-width: 882px;
-    margin-bottom: 64px;
+    line-height: 110%;
+    letter-spacing: -1.62px;
+    margin-bottom: 40px;
 }
 
 .yaht-list-container {
-    display: flex;
+    display: block;
 }
 .yach-button-list {
     width: 50px;
@@ -80,6 +82,13 @@ ol {
     justify-content: center;
 }
 
+.button-swiper-container {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 24px;
+}
+
 .yaht-list {
     gap: 16px;
 }
@@ -89,6 +98,14 @@ ol {
     background-color: #1F212D;
     border-radius: 24px;
     padding: 18px;
+}
+
+.yacht-card {
+    display: none;
+}
+
+.yaht-card {
+    display: none;
 }
 
 .yaht-img {
