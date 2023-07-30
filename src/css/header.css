@@ -3,7 +3,7 @@
 .header {
   padding: 24px 20px;
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .header {
     padding: 32px 32px;
   }
@@ -17,8 +17,17 @@
   outline: 2px solid red;
   outline-offset: -2px;
 }
+.heder-link-logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.heder-nav {
+  display: flex;
+  justify-content: space-between;
+}
 /* Tablet screen */
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container {
     padding: 32px 32px;
     max-width: 768px;
@@ -74,10 +83,6 @@
 .heder-link:focus {
   color: #747bff;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-}
 .heder-link-logo {
   color: var(--white, #f6f5ef);
   font-family: DM Sans;
@@ -99,12 +104,12 @@
   text-transform: uppercase;
 }
 .menu-toggle-icon {
-  stroke: red;
+  fill: red;
 }
 /* Mobile menu */
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
