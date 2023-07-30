@@ -2,6 +2,7 @@
 
 .header {
   padding: 24px 20px;
+  border-bottom: 2px solid gray;
 }
 .heder-container {
   min-width: 320px;
@@ -9,9 +10,10 @@
   margin-left: auto;
   margin-right: auto;
   padding: 24px 20px;
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
+
 .heder-link-logo {
 }
 .heder-link-logo {
@@ -135,7 +137,6 @@
   background: var(--dark-blue);
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  --linear-gradient: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
 }
 
 .menu-container.is-open {
