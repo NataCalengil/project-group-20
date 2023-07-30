@@ -67,6 +67,19 @@ ol {
     margin-bottom: 64px;
 }
 
+.yaht-list-container {
+    display: flex;
+}
+.yach-button-list {
+    width: 100px;
+    height: 37px;
+    border-radius: 60px;
+    padding: 14px 16px;
+    border: 1px solid var(--white, #F6F5EF);
+    background-color: #1F212D;
+    justify-content: center;
+}
+
 .yaht-list {
     gap: 16px;
 }
