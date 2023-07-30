@@ -11,7 +11,6 @@
   padding: 24px 20px;
   outline: 2px solid red;
   outline-offset: -2px;
-  border: 5px red;
 }
 .heder-link-logo {
 }
@@ -111,13 +110,10 @@
   /* display: flex;
   align-items: center;
   justify-content: center; */
-
-  /* margin: 0; */
   padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
-  /* border-radius: 50%; */
   outline: none;
 }
 
@@ -139,7 +135,6 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  /* background-color: #3f51b5; */
   z-index: 999;
   background: var(--dark-blue, #11131f);
   transform: translateX(100%);
