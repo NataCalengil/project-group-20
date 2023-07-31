@@ -1,7 +1,30 @@
 /* Прядко Марія */
 
 
+/*phone*/
+@media only screen and (min-width: 480px) {
+
+}
+
+
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+
+}
+
+
 /*footer*/
+@media screen and (max-width: 375px) {
+    .footer-container {
+        /* Update layout for mobile */
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        max-width: 375px;
+        text-align: left;
+    }
+}
 
 .footer-container {
     display: flex;
@@ -21,7 +44,21 @@
 }
 
 
+.footer-link-logo {
+    margin-left: 50px;
+    color: var(--white, #f6f5ef);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 118%;
+    /* 16.52px */
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
 
+.footer-link {
+
+}
 
 .footer-img {
     width: 22.588px;
@@ -44,6 +81,7 @@
 }
 
 .footer-menu-container {
+    margin-bottom: 50px;
     display: flex;
     gap: 24px;
     /*margin-bottom: 100px;*/
@@ -61,6 +99,7 @@
 }
 
 .footer-menu-text {
+    padding-right: 20px;
     text-decoration: none;
     fill: var(--white, #F6F5EF);
     display: inline-flex;
@@ -75,15 +114,6 @@ ul {
 }
 
 
-/*
-.footer-menu-container {
-
-добавляет палку мелкую но она стоит под about yahct reviews
-    border-bottom: 1px solid #F6F5EF33;
-
-     если что поменять маржинна 100 будет чуть внизу но с бекраундом
-    margin-bottom: 35px;
-}*/
 
 p {
     margin: 10px;
@@ -91,15 +121,16 @@ p {
 
 
 .footer-form-dn {
+   
     display: inline;
-    margin: 481px;
-    size: 14px;
-    color: rgba(246, 245, 239, 0.50);
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    /* line-height: 118%;*/
-    letter-spacing: 0.42px;
+        margin: 418px;
+        size: 14px;
+        color: rgba(246, 245, 239, 0.50);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        
+        letter-spacing: 0.42px;
 }
 
 .from-dn1 {
@@ -116,16 +147,12 @@ p {
 
 
 
-.footer-menu-text {
-    color: var(--white, #F6F5EF);
-}
 
 
 .footer-social {
-
+font-family: DM Sans;
     color: var(--white, #F6F5EF);
-    font-family: DM Sans;
-    padding-left: 300px;
+    padding-right: 50px;
     font-size: 14px;
     font-weight: 700;
     line-height: 110%;
@@ -134,13 +161,153 @@ p {
 
 
 
+@media screen and (max-width: 375px) {
+    .footer-container {
+        /* Update layout for mobile */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        max-width: 375px;
+        text-align: left;
+    }
 
+    .footer-link-logo {
+        margin-left: 0;
+        padding-right: 0;
+        text-align: left;
+        margin-bottom: 20px;
+        /* Adjust spacing for mobile */
+    }
 
+    .footer-menu-container {
+        display: none;
+        /* Hide the menu on mobile */
+    }
 
+    .footer-menu-text {
+        padding-right: 0;
+        display: block;
+        text-align: left;
+        color: var(--white, #F6F5EF);
+        font-family: DM Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        text-decoration: none;
+        fill: var(--white, #F6F5EF);
+        gap: 24px;
+        margin-bottom: 10px;
+        /* Adjust spacing for mobile */
+    }
 
+    /* Show WE IN SOCIAL section for mobile */
+    .footer-social {
+        display: none;
+    }
 
+    .footer-social-mobile {
+        display: block;
+        text-align: left;
+        margin-top: 20px;
+    }
 
+    .social-footer {
+        display: flex;
+        justify-content: flex-start;
+        gap: 16px;
+    }
 
+    .footer-li {
+        display: inline-block;
+    }
+
+    .footer-form-dn {
+        margin: 20px;
+        text-align: left;
+    }
+
+    .from-dn1,
+    .from-dn2 {
+        display: block;
+        text-align: left;
+    }
+
+    /* Add any additional mobile-specific styles here */
+}
+@media screen and (max-width: 375px) {
+    .footer-container {
+        /* Update layout for mobile */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        max-width: 375px;
+        text-align: left;
+    }
+
+    .footer-link-logo {
+        margin-left: 0;
+        padding-right: 0;
+        text-align: left;
+        margin-bottom: 20px;
+        /* Adjust spacing for mobile */
+    }
+
+    .footer-menu-container {
+        display: none;
+        /* Hide the menu on mobile */
+    }
+
+    .footer-menu-text {
+        padding-right: 0;
+        display: block;
+        text-align: left;
+        color: var(--white, #F6F5EF);
+        font-family: DM Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        text-decoration: none;
+        fill: var(--white, #F6F5EF);
+        gap: 24px;
+        margin-bottom: 10px;
+        /* Adjust spacing for mobile */
+    }
+
+    /* Show WE IN SOCIAL section for mobile */
+    .footer-social {
+        display: none;
+    }
+
+    .footer-social-mobile {
+        display: block;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .social-footer {
+        display: flex;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    .footer-li {
+        display: inline-block;
+    }
+
+    .footer-form-dn {
+        margin: 20px;
+        text-align: left;
+    }
+
+    .from-dn1,
+    .from-dn2 {
+        display: block;
+        text-align: left;
+    }
 
 
 .social-footer {
@@ -197,14 +364,6 @@ p {
     }
 }
 
-.footer {
-
-
-
-    background-color: var(--bg-colorrr);
-    /*padding: 96px 0;*/
-    display: block;
-}
 
 @media screen and (min-width: 1158px) {
     .footer {
@@ -376,10 +535,10 @@ p {
 
 .social-svg {
     /* из за маржина 13 пикселей полетел тест яхт адентерс*/
-    margin-left: 13px;
+    padding-left: 10px;
     width: 35px;
     height: 35px;
-    fill: var(--team-color);
+    fill: #f6f5ef;
 }
 
 
@@ -400,3 +559,17 @@ p {
     width: 40px;
     height: 40px;*/
 }
+
+@media screen and (min-width: 768px) {
+.container-footer {
+    padding: 50pc 0;
+}
+}
+.footer-link-logo{
+    padding-right: 100px;
+}
+
+.footer-menu-container {
+    padding-right: 100px;
+}
+    
