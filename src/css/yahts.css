@@ -1,40 +1,14 @@
 /*  Elshan Huliiev */
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
-ul,
-ol {
-    margin: 0;
-    padding: 0;
-}
-
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-}
-
 /* YAHTS */
 
-.yahts {}
-
-.yaht-container {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 335px;
+.yahts {
+    padding-bottom: 40px;
 }
 
+
 .yaht-button-container {
+    width: 335px;
     margin: 0 auto;
     padding-bottom: 80px;
 }
@@ -65,21 +39,65 @@ ol {
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
-    letter-spacing: -1.62px;
     margin-bottom: 40px;
+}
+
+.title-light::before, 
+.title-light::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #93ABAE;
+    filter: blur(100px);
+    z-index: 5;
+}
+
+.title-light::before {
+    left: 0;
+    width: 255px;
+    height: 255px;
+    opacity: 0.6;
+    padding-top: 70px;
+}
+
+.title-light::after {
+    left: 60%;
+    width: 195px;
+    height: 195px;
+    opacity: 0.3;
+    padding-top: 50px;
 }
 
 .yaht-list-container {
     display: block;
 }
 .yach-button-list {
+    display: flex;
     width: 50px;
     height: 37px;
     border-radius: 60px;
-    padding: 14px 16px;
+    padding: 14px;
     border: 1px solid var(--white, #F6F5EF);
-    background-color: #1F212D;
+    background-color: #11131F;
     justify-content: center;
+}
+
+.yaht-icon {
+    fill: var(--white);
+}
+
+.yach-button-list:hover, 
+.yach-button-list:focus {
+    border-color: #93ABAE;
+}
+
+.yaht-icon:hover, 
+.yaht-icon:focus {
+    fill: #93ABAE;
 }
 
 .button-swiper-container {
@@ -169,4 +187,74 @@ ol {
     line-height: 1.65;
     letter-spacing: 0.42px;
     color: #F6F5EF;
+}
+
+@media screen and (min-width: 768px) {
+
+    .yahts {
+        padding-bottom: 50px;
+    }
+
+    .yaht-button-container {
+        width: 641px;
+    }
+
+    .yaht-titel {
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        margin-bottom: 64px;
+        width: 641px;
+    }
+    .yacht-card {
+        display: block;
+    }
+
+    .title-light {
+    }
+
+    .title-light::before {
+        width: 399px;
+        height: 399px;
+        padding-top: 30px;
+    }
+    
+    .title-light::after {
+        left: 55%;
+        width: 304px;
+        height: 304px;
+    }
+}
+
+@media screen and (min-width: 1288px) {
+    .yaht-card {
+        display: block;
+    }
+
+    .yaht-button-container {
+        width: 882px;
+    }
+
+    .yaht-titel {
+        font-size: 100px;
+        width: 882px;
+    }
+
+    .yaht-button-container {
+        padding-bottom: 164px;
+    }
+
+    .title-light::before {
+        left: 25%;
+        width: 414px;
+        height: 414px;
+    }
+        
+    .title-light::after {
+        left: 57%;
+        width: 316px;
+        height: 316px;
+    }
+
 }
