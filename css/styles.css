@@ -1,0 +1,301 @@
+:root {
+ --background-color: #11131F; 
+  --text-color: #F6F5EF;
+  --primary-font: ' DM Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --white-color: #F6F5EF;
+--linear-gradient: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
+--light-green: #93ABAE;
+--hover-btn-color: #88B3B9;
+--dark-blue: #11131F;
+--blue: #1F212D;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: var(--primary-font);
+  background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+  color: var(--text-color);
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  gap: 24px;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+}
+
+
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+
+
+
+
+/*-About--*/
+.about{
+  background: #11131F;
+  background: var(--dark-blue, #11131F);
+
+}
+
+.about-text{
+  color: #F6F5EF;
+font-family: DM Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: -1.08px;
+margin-left: 20px;
+margin-right: 20px;
+
+width: 335px;
+
+}
+.-about-yacht-text{
+  color: #BEC7C2;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%;
+}
+.about-list{
+ display: flex;
+  flex-direction:row;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  gap: 14px;
+}
+.about-item{
+ color: #F6F5EF;
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: -0.28px;
+width: 160px;
+height: auto;
+
+
+}
+
+.about-yacht-look-list{
+  margin-top: 40px;
+ 
+}
+.about-yacht-look-item{
+
+
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 24px;
+}
+
+/*------------- Media  About-------------*/
+
+@media screen and (max-width: 767px) {
+  .container-about{
+max-width: 768px;
+  }
+  .about-text{
+    color: #F6F5EF;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.08px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+  max-width: 335px;
+  
+  }
+  .about-yacht-text{
+    color: #BEC7C2;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 120%;
+  }
+ 
+  .about-item{
+   color: #F6F5EF;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.28px;
+  width: 160px;
+  height: auto;
+  
+  
+  }
+  .about-yacht-look{
+    display: flex;
+    gap: 24px;
+  }
+  .about-yacht-look-item{
+
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+   
+   }
+}
+
+@media screen and (min-width: 768px) {
+  .container-about{
+    max-width: 1279px;
+      }
+ .about-text{
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -1.44px;
+  width: 514px;
+ 
+  margin-bottom: 32px;
+  margin-left: 32px;
+}
+.about-yacht-text{
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%;
+}
+}
+
+.about-item{
+
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: -0.32px;
+width: 183px;
+height: auto;
+}
+.about-yacht-look-item{
+
+}
+
+
+
+@media screen and (min-width: 1280px) {
+  .container-about{
+    min-width: 1280px;
+      }
+
+  .container-about{
+  
+    display: flex;
+    flex-direction:row;
+    width: 1280px;
+   
+  }
+
+ 
+.about-list{
+margin-top: 0;
+padding-top: 0;
+  gap: 32px;
+
+}
+.about-item{
+
+  width: 183px;
+ height: auto;
+
+ 
+ } 
+
+}
+/*------------- Frames -------------*/
+
+@keyframes social-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-10deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  30% {
+    transform: rotate(-10deg);
+  }
+
+  40% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
