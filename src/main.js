@@ -1,6 +1,6 @@
 
 // Top button
-window.onscroll = () => {
+/*window.onscroll = () => {
     toggleTopButton();
   }
   
@@ -15,7 +15,7 @@ window.onscroll = () => {
     } else {
       document.getElementById('back-to-up').classList.add('d-none');
     }
-  }
+  }*/
 
 
 
