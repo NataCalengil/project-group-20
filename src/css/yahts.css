@@ -211,6 +211,10 @@
         display: block;
     }
 
+    .yaht-list {
+        display: flex;
+    }
+
     .title-light {
     }
 
