@@ -7,6 +7,9 @@
   display: none;
 }
 
+/* Tablet screen */
+@media  screen and (min-width: 768px) {
+
 .top-header {
   border-bottom: 1px solid rgba(246, 245, 239, 0.2);
   height: 72px;
