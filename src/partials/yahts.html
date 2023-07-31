@@ -6,9 +6,9 @@
         Choose your dream yacht and sail away into the sunset
       </h2>
       <button type="button" class="yach-button">Yacht rental</button>
+      <div class="title-light"></div>
     </div>
     <div class="yaht-list-container">
-      <button class="yach-button-list" type="button"></button>
       <ul class="yaht-list list">
         <li class="yaht-item">
           <img
@@ -56,7 +56,7 @@
             </ul>
           </div>
         </li>
-        <li class="yaht-item">
+        <li class="yaht-item yacht-card">
           <img
             class="yaht-img"
             src="./img/yahts/yaht-2.jpg"
@@ -102,7 +102,7 @@
             </ul>
           </div>
         </li>
-        <li class="yaht-item">
+        <li class="yaht-item yaht-card">
           <img
             class="yaht-img"
             src="./img/yahts/yaht-3.jpg"
@@ -233,7 +233,18 @@
           </div>
         </li> -->
       </ul>
-      <button class="yach-button-list" type="button"></button>
+      <div class="button-swiper-container">
+        <button class="yach-button-list" type="button">
+          <svg class="yaht-icon" width="18" height="8">
+            <use href="./img/icons.svg.svg#icon-arrow-stroke-left"></use>
+          </svg>
+        </button>
+        <button class="yach-button-list" type="button">
+          <svg class="yaht-icon" width="18" height="8">
+            <use href="./img/icons.svg.svg#icon-arrow-stroke-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
 
 </section>
