@@ -1,5 +1,4 @@
 /* Прядко Марія */
-
 ul,
 ol {
     margin-top: 0;
@@ -128,7 +127,6 @@ footer {
     }
 
     .container_menu_footer {
-        font-family: DM ;
         display: inline-block;
     }
 
@@ -160,7 +158,7 @@ footer {
 }
 
 .ramka {
-   
+    
 }
 
 .logo_and_title {
