@@ -109,6 +109,7 @@
 
 .yaht-list {
     gap: 16px;
+    justify-content: center;
 }
 
 .yaht-item {
