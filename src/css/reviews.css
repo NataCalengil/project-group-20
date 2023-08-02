@@ -14,15 +14,20 @@
 }
 
 .im-reviews {
+    border-radius: 72px;
     width: 46px;
     height: 46px;
     margin-bottom: 18px;
     margin-left: auto;
     margin-right: auto;
 }
+.im-reviews {
+    background: url(../img/poli/john@1x.jpg), lightgray 50% / cover no-repeat;
+}
+
 
 .reviews-title span {
-    color: var(--light-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+    color: #BEC7C2;
     font-style: italic;
 }
 
@@ -155,7 +160,6 @@
         width: 344px;
         max-width: unset;
         height: 266px;
-        padding: 24px 32px;
     }
 
     .reviews-div {
@@ -180,7 +184,6 @@
         line-height: 140%;
         letter-spacing: -0.32px;
         max-height: 110px;
-        width: 320px;
     }
 
     .ri-title {
@@ -194,8 +197,14 @@
     .reviews .container {
         max-width: 1216px;
     }
+    .ri-par{
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .reviews-list {
+        max-width: unset;
         margin-top: 64px;
         gap: 24px;
         width: 100%;
@@ -229,6 +238,9 @@
         max-width: 497px;
         margin-left: 0;
         margin-right: auto;
+    }
+    .reviews-text{
+        margin-top: 0;
     }
 
     .ri-title {
