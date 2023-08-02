@@ -80,15 +80,18 @@ body {
   margin:0 auto;
   
 }
-.btn-top .btn {
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   border: 0;
-  background: none;
   padding: 0;
-}
-.btn-top {
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Media requests */
