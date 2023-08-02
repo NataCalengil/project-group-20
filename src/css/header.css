@@ -1,7 +1,10 @@
-
 .header-link {
   display: flex;
   gap: 8px;
+}
+.header-link-logo:hover,
+.header-link-logo:focus {
+  color: #88B3B9;
 }
 .header-nav {
   display: none;
@@ -19,32 +22,42 @@
   position: absolute;
   right: 16px;
 }
-
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: #88B3B9;
+}
 /*  Mobile menu */
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   margin: 0;
-  padding: 0;
+  padding: 0; 
+   /* padding-right: 20px;   */
   background-color: transparent;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
 }
-
+.menu-toggle-close {
+  padding-right: 20px; 
+}
+.menu-toggle-icon {
+   fill: none;
+  stroke: aliceblue; 
+}
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
-  padding: 32px;
+  height: 110vh;
+   padding-left: 20px; 
   background-color: var(--dark-blue);
   z-index: 999;
 
@@ -64,15 +77,15 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 24px;
+  right: 20px;
   color: var(--white-color);
 }
 
 .hamburger-mobile-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin-top: 140px;
   align-items: center;
   height: 100%;
 }
@@ -92,17 +105,14 @@
   text-transform: uppercase;
 }
 
-.mobile-menu .link {
-  display: block;
-  font-size: 30px;
-  padding: 10px;
-  font-weight: 700;
-  color: var(--white-color);
-  text-decoration: none;
-  line-height: 40px;
-  letter-spacing: 0.72px;
+.menu-toggle:focus,
+.menu-toggle:hover {
+  color: #88B3B9;
 }
-
+.hamburger-nav-link:hover,
+.hamburger-nav-link:focus {
+  color: #88B3B9;
+}
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -125,4 +135,34 @@
 }
 
 @media screen and (min-width: 1280px) {
+ .header {  
+  max-width: 1216px;
+  }
+}
+.mobile-menu-light::before,
+.mobile-menu-light::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #93ABAE;
+    filter: blur(100px);
+    z-index: 5;
+}
+.mobile-menu-light::before {
+    left: 0;
+    width: 255px;
+    height: 255px;
+    opacity: 0.6;
+    padding-top: 70px;
+}
+.mobile-menu-light::after {
+    left: 60%;
+    width: 195px;
+    height: 195px;
+    opacity: 0.3;
+    padding-top: 50px;
 }
