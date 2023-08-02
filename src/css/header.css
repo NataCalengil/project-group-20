@@ -43,6 +43,7 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  z-index: 99;
 }
 .menu-toggle-close {
   padding-right: 20px; 
@@ -152,17 +153,18 @@
     filter: blur(100px);
     z-index: 5;
 }
-.mobile-menu-light::before {
-    left: 0;
-    width: 255px;
-    height: 255px;
+ .mobile-menu-light::before {
+     left: 0; 
+    width: 279px;
+    height: 279px;
     opacity: 0.6;
-    padding-top: 70px;
-}
-.mobile-menu-light::after {
+     /* padding-top: 70px;  */
+     
+} 
+ .mobile-menu-light::after {
     left: 60%;
     width: 195px;
     height: 195px;
     opacity: 0.3;
     padding-top: 50px;
-}
+} 
