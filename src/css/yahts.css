@@ -4,6 +4,9 @@
 
 .yahts {
     padding-bottom: 40px;
+    background-image: url(../img/yahts/mask-group.png);
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 
@@ -110,6 +113,7 @@
 .yaht-list {
     gap: 16px;
     justify-content: center;
+    display: flex;
 }
 
 .yaht-item {
@@ -190,7 +194,11 @@
     color: #F6F5EF;
 }
 
-@media screen and (min-width: 768px) {
+.desk-button {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1287px) {
 
     .yahts {
         padding-bottom: 50px;
@@ -230,10 +238,19 @@
         width: 304px;
         height: 304px;
     }
+
+    .desk-button {
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 1288px) {
     .yaht-card {
+        display: block;
+    }
+
+    .yacht-card {
         display: block;
     }
 
@@ -244,6 +261,12 @@
     .yaht-titel {
         font-size: 100px;
         width: 882px;
+    }
+
+    .yaht-list-container {
+        display: flex;
+        justify-content: center;
+        width: 1274px;
     }
 
     .yaht-button-container {
@@ -260,6 +283,35 @@
         left: 57%;
         width: 316px;
         height: 316px;
+    }
+
+    .desk-button {
+        display: flex;
+        width: 50px;
+        height: 37px;
+        border-radius: 60px;
+        padding: 14px;
+        border: 1px solid var(--white, #F6F5EF);
+        background-color: #11131F;
+        justify-content: center;
+        margin-top: 236px;
+    }
+
+    .desk-button:hover, 
+    .desk-button:focus {
+        border-color: #93ABAE;
+    }
+
+    .deck-start {
+        margin-right: 11px;
+    }
+
+    .deck-end {
+        margin-left: 11px;
+    }
+
+    .button-swiper-container {
+        display: none;
     }
 
 }
