@@ -4,7 +4,10 @@
 }
 .header-link-logo:hover,
 .header-link-logo:focus {
-  color: #88B3B9;
+  color: #88b3b9;
+}
+.header-link-logo {
+  z-index: 99;
 }
 .header-nav {
   display: none;
@@ -24,7 +27,7 @@
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
-  color: #88B3B9;
+  color: #88b3b9;
 }
 /*  Mobile menu */
 
@@ -36,8 +39,7 @@
   justify-content: center;
 
   margin: 0;
-  padding: 0; 
-   /* padding-right: 20px;   */
+  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -46,11 +48,11 @@
   z-index: 99;
 }
 .menu-toggle-close {
-  padding-right: 20px; 
+  padding-right: 20px;
 }
 .menu-toggle-icon {
-   fill: none;
-  stroke: aliceblue; 
+  fill: none;
+  stroke: aliceblue;
 }
 .menu-container {
   position: fixed;
@@ -58,7 +60,7 @@
   left: 0;
   width: 100vw;
   height: 110vh;
-   padding-left: 20px; 
+  padding-left: 20px;
   background-color: var(--dark-blue);
   z-index: 999;
 
@@ -108,11 +110,11 @@
 
 .menu-toggle:focus,
 .menu-toggle:hover {
-  color: #88B3B9;
+  color: #88b3b9;
 }
 .hamburger-nav-link:hover,
 .hamburger-nav-link:focus {
-  color: #88B3B9;
+  color: #88b3b9;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -136,35 +138,34 @@
 }
 
 @media screen and (min-width: 1280px) {
- .header {  
-  max-width: 1216px;
+  .header {
+    max-width: 1216px;
+    margin: 0 auto;
   }
 }
 .mobile-menu-light::before,
 .mobile-menu-light::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #93ABAE;
-    filter: blur(100px);
-    z-index: 5;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #93abae;
+  filter: blur(100px);
+  z-index: 5;
 }
- .mobile-menu-light::before {
-     left: 0; 
-    width: 279px;
-    height: 279px;
-    opacity: 0.6;
-     /* padding-top: 70px;  */
-     
-} 
- .mobile-menu-light::after {
-    left: 60%;
-    width: 195px;
-    height: 195px;
-    opacity: 0.3;
-    padding-top: 50px;
-} 
+.mobile-menu-light::before {
+  left: 0;
+  width: 279px;
+  height: 279px;
+  opacity: 0.6;
+}
+.mobile-menu-light::after {
+  left: 60%;
+  width: 195px;
+  height: 195px;
+  opacity: 0.3;
+  padding-top: 50px;
+}
