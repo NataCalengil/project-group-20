@@ -1,174 +1,125 @@
-/* Прядко Марія */
 
-
-footer {
-    background-color: var(--dark-blue);
+.footer-content{
+    border-top: 1px solid rgba(246, 245, 239, 0.2);
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 40px  0;
 }
 
-/* Mobile */
-@media screen and (max-width:768px) {
-    .container_footer {
-        width: 335px;
-        height: 334px;
-        flex-shrink: 0;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 14px;
-    }
-
-    .line_footer {
-        width: 335px;
-        height: 0px;
-        flex-shrink: 0;
-        stroke-width: 1px;
-        stroke: rgba(246, 245, 239, 0.20);
-    }
-
-    .footer_logo_and_title {
-        display: flex;
-        align-items: center;
-        padding-top: 44px;
-        padding-bottom: 44px;
-        gap: 8px;
-    }
-
-    .icon_footer_yacht {
-        fill: var(--white);
-    }
-
-    .menu_footer {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-    }
-
-    .social_footer {
-        padding-top: 40px;
-    }
-
-    .social_footer_text {
-        margin-bottom: 16px;
-    }
-
-    .text_main_footer {}
-
-    .tekst_vnizu_stranici {
-        color: rgba(246, 245, 239, 0.50);
-        text-align: center;
-        font-family: DM Sans;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 118%;
-        letter-spacing: 0.36px;
-    }
-
-    .text_main_footer {
-        /* margin-bottom: 16px; */
-    }
-
-    .social_icons {
-        display: flex;
-        gap: 14px;
-    }
-
-    .social_media_link {
-        stroke-width: 1px;
-        stroke: rgba(246, 245, 239, 0.50);
-        fill: var(--white);
-    }
-
-    .tekst_vnizu_stranici_container {
-        padding-top: 40px;
-        padding-bottom: 14px;
-        /* justify-content: center */
-    }
-
-    .spisok_vnizu_stranici {
-        display: flex;
-        gap: 14px;
-        padding-top: 40px;
-        padding-bottom: 14px;
-        justify-content: center;
-    }
+.footer-logo{
+    margin: 0 0 44px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-
-    .line_footer {
-        width: 704px;
-        height: 0px;
-        flex-shrink: 0;
-    }
-
-    .container_logo_and_title {
-        margin-right: 135px;
-        margin-top: 69px;
-        display: inline-block;
-    }
-
-    .menu_footer {
-        display: inline-block;
-
-    }
-
-    .social_footer {
-        display: inline-block;
-        margin-left: 143px;
-    }
-
-    .container_menu_footer {
-        display: inline-block;
-    }
-
-    .social_icons {
-        display: flex;
-        gap: 16px;
-        margin-top: 16px;
-    }
-
-    .tekst_vnizu_stranici_container {
-        margin-top: 100px;
-        margin-bottom: 16px;
-    }
-
-    .tekst_vnizu_stranici {
-        color: rgba(246, 245, 239, 0.50);
-        text-align: center;
-        font-family: DM Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 118%;
-        letter-spacing: 0.42px;
-    }
-
-    .spisok_vnizu_stranici {
-        display: flex;
-    }
-}
-
-
-.logo_and_title {
+.footer-logo:is(:hover, :focus) {
+    color: var(--light-green);
+  }
+.menu-footer {
     display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 
-.text_main_footer {
-    color: #F6F5EF;
-    font-family: DM Sans;
-    font-size: 14px;
-    font-style: normal;
+.footer-nav-link, .footer-title{
+    color: var(--white-color);
+    font-size: 14px;    
     font-weight: 700;
-    line-height: 118%;
+    line-height: 1.18;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-nav-link:is(:hover, :focus) {
+    color: var(--light-green);
+  }
 
 
+.footer-title{
+    margin: 0 0 16px;
+}
+.social-footer {
+    padding: 40px 0 0;
+}
 
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
 
+.social-media-link {
+    border-radius: 6px;
+    border: 1px solid rgba(246, 245, 239, 0.50);
+    padding: 7px;
+    fill: var(--white-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.social-media-link:is(:hover, :focus) {
+    border: 1px solid var(--light-green);
+    fill: var(--light-green);
+  }
+  
+.copy-text{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 14px;
+    gap: 14px;
+}
+.copy-text-block {
+    color: rgba(246, 245, 239, 0.50);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.36px;
+}
+
+@media screen and (min-width:768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .social-footer {
+        padding: 0;
+    }
+    .copy-text {
+        margin: 0 0 16px;
+        gap: 50px;
+    }
+    .footer-content {
+        padding: 70px 0 100px;
+    }
+    .social-icons {
+        gap: 16px;
+    }
+    .social-media-link{
+        width: 40px;
+        height: 40px;
+        padding: 9px;
+    }
+
+}
+
+@media screen and (min-width:1280px) {
+    .footer-content {
+        padding: 64px 0 150px;
+    }
+    .footer-nav-list {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+}
