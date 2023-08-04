@@ -87,4 +87,15 @@
     .rent{
         padding: 82px 0;
     }
+    .rent-content-first{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+  
+
+    .rent-content-first img{
+        width: 335px;
+    }
 }
