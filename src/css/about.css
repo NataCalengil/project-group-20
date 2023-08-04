@@ -1,4 +1,8 @@
-   .about-text{
+   .about{
+    padding: 80px 0 40px;
+   }
+
+.about-text{
       color: #F6F5EF;
       font-family: DM Sans;
       font-size: 24px;
