@@ -14,16 +14,19 @@
 }
 
 .im-reviews {
-    border-radius: 72px;
-    width: 46px;
-    height: 46px;
-    margin-bottom: 18px;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
 }
-.im-reviews {
-    background: url(../img/poli/john@1x.jpg), lightgray 50% / cover no-repeat;
+
+.photo-reviews {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    border-radius: 50%;
 }
+
 
 
 .reviews-title span {
@@ -64,21 +67,14 @@
     padding: 24px 24px;
     border-radius: 24px;
     background: #1F212D;
-
-    margin-top: 40px;
     max-width: 335px;
 }
 
-.reviews-ul {
+.reviews-list {
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
     width: 100%;
-}
-
-.reviews-item {
-    width: 100%;
-    max-height: 208px;
 }
 
 .two {
@@ -102,6 +98,7 @@
 }
 
 .ri-title {
+    margin-top: 18px;
     color: var(--white, #F6F5EF);
     text-align: center;
     font-size: 16px;
@@ -124,8 +121,9 @@
         max-width: 704px;
     }
 
-    .im-reviews {
-        margin-bottom: 24px;
+    .photo-reviews {
+        width: 56px;
+        height: 56px;
     }
 
     .reviews-title {
@@ -144,7 +142,6 @@
     .reviews-list {
         gap: 16px;
         max-width: 704px;
-
     }
 
     .two {
@@ -157,9 +154,9 @@
 
 
     .reviews-item {
-        width: 344px;
+        padding: 24px 10px;
+        width: calc((704px- 16px)/2);
         max-width: unset;
-        height: 266px;
     }
 
     .reviews-div {
@@ -187,6 +184,7 @@
     }
 
     .ri-title {
+        margin-top: 24px;
         font-size: 18px;
     }
 
@@ -197,7 +195,8 @@
     .reviews .container {
         max-width: 1216px;
     }
-    .ri-par{
+
+    .ri-par {
         max-width: 320px;
         margin-left: auto;
         margin-right: auto;
@@ -225,9 +224,8 @@
     }
 
     .reviews-item {
+        padding: 32px 32px;
         margin-top: 0;
-        width: 384px;
-        max-width: unset;
     }
 
     .reviews-title {
@@ -237,14 +235,10 @@
         letter-spacing: -1.44px;
         max-width: 497px;
         margin-left: 0;
-        margin-right: auto;
-    }
-    .reviews-text{
-        margin-top: 0;
     }
 
-    .ri-title {
-        margin-top: 24px;
+    .reviews-text {
+        margin-top: 0;
     }
 
     .reviews-first {
