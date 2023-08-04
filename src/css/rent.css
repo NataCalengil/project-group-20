@@ -1,0 +1,227 @@
+.rent {
+  padding: 80px 0;
+}
+.rent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rent-first-block {
+  width: 335px;
+  margin-bottom: 40px;
+}
+.first-block-img {
+  width: 259px;
+}
+.rent-second-block {
+  width: 335px;
+}
+.rent-h2 {
+  color: var(--white-color);
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -1.62px;
+  margin-bottom: 16px;
+}
+.rent-form-box {
+  margin-bottom: 24px;
+}
+
+.rent-form-field {
+  color: var(--white-color);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.63px;
+  display: block;
+}
+.rent-form-input {
+  display: block;
+  color: var(--white-color);
+  border-color: transparent;
+  background-color: transparent;
+  outline: transparent;
+  width: 100%;
+  height: 16px;
+  border-bottom: 1px solid var(--white-color);
+}
+
+.rent-form-input:focus,
+.rent-form-input:hover {
+  border-bottom: 1px solid #f6f5ef80;
+}
+textarea.rent-form-input {
+  height: 58px;
+}
+.rent-button {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: DM Sans;
+  line-height: 1.1;
+  letter-spacing: -0.63px;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 60px;
+  background-color: transparent;
+  padding: 14px 28px;
+}
+
+.rent-button-svg {
+  margin-left: 16px;
+  fill: var(--white-color);
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #11131f80;
+  transition: opacity var(--anima), visibility var(--anima);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 335px;
+  border-radius: 20px;
+  background-color: #1f212d;
+  padding: 40px 24px;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.modal-button-close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+.modal-icon {
+  fill: var(--white-color);
+}
+.rent-modal-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+.rent-modal-p {
+  color: var(--white-color);
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1.08px;
+  margin-bottom: 14px;
+}
+.rent-modal-text {
+  color: var(--white-color);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.28px;
+}
+@media screen and (min-width: 768px) {
+  .rent-container {
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-between;
+  }
+  .rent-first-block {
+    width: 271px;
+    margin-bottom: 0;
+  }
+  .first-block-img {
+    width: 271px;
+  }
+  .rent-h2 {
+    color: var(--white-color);
+    font-family: DM Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -2.7px;
+    margin-bottom: 32px;
+  }
+
+  .rent-form-box {
+    margin-bottom: 28px;
+  }
+  .rent-form-box:last-of-type {
+    margin-bottom: 32px;
+  }
+
+  .rent-form-input {
+    font-size: 16px;
+  }
+  .rent-button {
+    font-size: 18px;
+    letter-spacing: -0.81px;
+  }
+  .modal {
+    width: 570px;
+    padding: 97px 64px 64px;
+  }
+  .rent-modal-img {
+    width: 338px;
+    height: 198px;
+    margin-bottom: 21px;
+  }
+  .rent-modal-p {
+    font-size: 32px;
+    margin-bottom: 16px;
+    letter-spacing: -1.44px;
+  }
+  .rent-modal-text {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+  .modal-button-close {
+    top: 32px;
+    right: 32px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .rent-first-block {
+    width: 282px;
+    margin-bottom: 0;
+  }
+  .first-block-img {
+    width: 282px;
+    height: 191px;
+  }
+  .rent-h2 {
+    color: var(--white-color);
+    font-family: DM Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -2.7px;
+    margin-bottom: 64px;
+  }
+
+  .rent-form-box {
+    margin-bottom: 28px;
+  }
+  .rent-form-box:last-of-type {
+    margin-bottom: 64px;
+  }
+}
