@@ -62,7 +62,7 @@
     width: 255px;
     height: 255px;
     opacity: 0.6;
-    padding-top: 1400px;
+    margin-top: 1400px;
 }
 
 .title-light::after {
@@ -70,7 +70,7 @@
     width: 125px;
     height: 195px;
     opacity: 0.3;
-    padding-top: 1380px;
+    margin-top: 1380px;
 }
 
 .yaht-list-container {
