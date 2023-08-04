@@ -2,6 +2,8 @@
   padding: 80px 0;
 }
 .rent-container {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,9 +14,6 @@
 }
 .first-block-img {
   width: 259px;
-}
-.rent-second-block {
-  width: 335px;
 }
 .rent-h2 {
   color: var(--white-color);
@@ -46,9 +45,10 @@
   border-color: transparent;
   background-color: transparent;
   outline: transparent;
-  width: 100%;
+  width: 335px;
   height: 16px;
   border-bottom: 1px solid var(--white-color);
+  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rent-form-input:focus,
@@ -69,11 +69,24 @@ textarea.rent-form-input {
   border-radius: 60px;
   background-color: transparent;
   padding: 14px 28px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rent-button-svg {
   margin-left: 16px;
   fill: var(--white-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.rent-button:hover,
+.rent-button:focus {
+  color: var(--light-green);
+  border-color: var(--light-green);
+}
+
+.rent-button:hover .rent-button-svg,
+.rent-button:focus .rent-button-svg {
+  fill: var(--light-green);
 }
 
 .backdrop {
@@ -83,7 +96,7 @@ textarea.rent-form-input {
   left: 0;
   top: 0;
   background: #11131f80;
-  transition: opacity var(--anima), visibility var(--anima);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -95,6 +108,7 @@ textarea.rent-form-input {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 335px;
   border-radius: 20px;
   background-color: #1f212d;
@@ -102,6 +116,7 @@ textarea.rent-form-input {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button-close {
   background-color: transparent;
@@ -109,6 +124,10 @@ textarea.rent-form-input {
   position: absolute;
   top: 14px;
   right: 14px;
+}
+.modal-button-close:focus,
+.modal-button-close:hover {
+  fill: var(--light-green);
 }
 .modal-icon {
   fill: var(--white-color);
@@ -141,22 +160,17 @@ textarea.rent-form-input {
   .rent-container {
     flex-direction: row;
     align-items: normal;
-    justify-content: space-between;
+    justify-content: center;
   }
   .rent-first-block {
-    width: 271px;
     margin-bottom: 0;
+    margin-right: 69px;
   }
   .first-block-img {
     width: 271px;
   }
   .rent-h2 {
-    color: var(--white-color);
-    font-family: DM Sans;
     font-size: 60px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.1;
     letter-spacing: -2.7px;
     margin-bottom: 32px;
   }
@@ -170,6 +184,7 @@ textarea.rent-form-input {
 
   .rent-form-input {
     font-size: 16px;
+    width: 271px;
   }
   .rent-button {
     font-size: 18px;
@@ -200,21 +215,12 @@ textarea.rent-form-input {
 }
 @media screen and (min-width: 1220px) {
   .rent-first-block {
-    width: 282px;
-    margin-bottom: 0;
+    margin-right: 188px;
   }
   .first-block-img {
-    width: 282px;
     height: 191px;
   }
   .rent-h2 {
-    color: var(--white-color);
-    font-family: DM Sans;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -2.7px;
     margin-bottom: 64px;
   }
 

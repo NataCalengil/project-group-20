@@ -2,7 +2,20 @@
   <div class="container rent-container">
     <div class="rent-first-block">
       <h2 class="rent-h2">Rent a yacht now</h2>
-      <img src=".\img\rent\rent-yaht.png" class="first-block-img" />
+      <img
+        srcset="
+          ./img/rent/mob-rentyaht@1x.png 259w,
+          ./img/rent/mob-rentyaht@2x.png 260w,
+          ./img/rent/tab-rentyaht@1x.png 271w,
+          ./img/rent/tab-rentyaht@2x.png 272w
+          ./img/rent/tab-rentyaht@1x.png 282w,
+          ./img/rent/tab-rentyaht@2x.png 283w
+        "
+        sizes="(min-width: 1220px) 282px, (min-width: 746px) 271px, 100vw"
+        src="./img/rent/mob-rentyaht@1x.png"
+        alt="image"
+        class="first-block-img"
+      />
     </div>
     <form class="rent-second-block">
       <div class="rent-form-box">
@@ -54,7 +67,7 @@
       >
         Send
         <svg class="rent-button-svg" width="18px" height="8px" ;>
-          <use href="./img/icons.svg.svg#icon-arrow-stroke-right"></use>
+          <use href="./img/rent/rent-icons.svg#arrow-right-icon"></use>
         </svg>
       </button>
     </form>
@@ -68,7 +81,18 @@
       </svg>
     </button>
 
-    <img class="rent-modal-img" src="./img/rent/img yaht.png" width="287px" />
+    <img
+      srcset="
+        ./img/rent/mob-modalyaht@1x.png 287w,
+        ./img/rent/mob-modalyaht@2x.png 288w,
+        ./img/rent/tab-modalyaht@1x.png 338w,
+        ./img/rent/tab-modalyaht@2x.png 339w
+      "
+      sizes="(min-width: 768px) 388px, 100vw"
+      src="./img/rent/mob-modalyaht@1x.png"
+      alt="image"
+      class="rent-modal-img"
+    />
     <p class="rent-modal-p">Thank you</p>
     <div class="rent-modal-text">
       Thank you for choosing Yacht Adventures, your booking details have been
