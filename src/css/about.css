@@ -79,23 +79,20 @@
      .about-text{
         color: #F6F5EF;
         font-family: DM Sans;
-        font-size: 24px;
-        font-style: normal;
+        font-size: 32px;
         font-weight: 500;
         line-height: 120%;
-        letter-spacing: -1.08px;
-        margin-left: 20px;
-        margin-right: 20px;
-        max-width: 335px;
+        letter-spacing: -1.44px;
+        max-width: 514px;
       }
 
      .about-yacht-text{
-       color: #BEC7C2;
-       font-family: DM Sans;
-       font-size: 24px;
-       font-style: italic;
-       font-weight: 500;
-       line-height: 120%;
+        color: #BEC7C2;
+        font-style: italic;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: -1.44px;
      }
 
      .about-list{
