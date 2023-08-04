@@ -13,8 +13,8 @@
     referrerpolicy="no-referrer"
   />
     
-    <script type="module" crossorigin src="/project-group-20/assets/index-04dcae8b.js"></script>
-    <link rel="stylesheet" href="/project-group-20/assets/index-fc8c17a5.css">
+    <script type="module" crossorigin src="/project-group-20/assets/index-a7c6aed4.js"></script>
+    <link rel="stylesheet" href="/project-group-20/assets/index-d585989a.css">
   </head>
   <body>
     <!-- L-Lecha Iwanov -->
@@ -376,71 +376,88 @@
 </section>
 
       <!-- Mykhailo Artamonov -->
-      <section id="rent-btn" class="rent">
-<div class="container">
-<div  class="rent-content">
-    <div class="rent-content-first">
-        <h2>Rent a yacht now</h2>
-        <img
-            src="/project-group-20/assets/rent-yaht-e8ca13e7.png"
-            alt="Diving services"
-            width="259"
+      <section class="rent">
+  <div class="container rent-container">
+    <div class="rent-first-block">
+      <h2 class="rent-h2">Rent a yacht now</h2>
+      <img src=".\img\rent\rent-yaht.png" class="first-block-img" />
+    </div>
+    <form class="rent-second-block">
+      <div class="rent-form-box">
+        <label class="rent-form-field" for="user-name">Full Name</label>
+        <input
+          id="user-name"
+          name="user-name"
+          type="text"
+          class="rent-form-input"
+          pattern="[a-zA-Z]+"
+          required
         />
-    </div>  
-    <form class="form" action="#" method="post">
-        <div class="form-field">
-          <label class="form-label" for="user-name">Full Name</label>
-          <div class="form-item">
-            <input
-              class="form-input"
-              type="text"
-              name="user-name"
-              id="user-name"
-              required
-            />
-          </div>
-        </div>
-        <div class="form-field">
-            <label class="form-label" for="mail">Email</label>
-            <div class="form-item">
-              <input
-                class="form-input"
-                type="email"
-                name="user-email"
-                id="mail"
-                required
-              />
-            </div>
-          </div>
-
-        <div class="form-field">
-          <label class="form-label" for="phone">Phone number</label>
-          <div class="form-item">
-            <input
-              class="form-input"
-              type="tel"
-              name="user-phone"
-              id="phone"
-              required
-            />
-          </div>
-        </div>
-        
-        <div class="form-field">
-          <label class="form-label" for="user-comment">Comment</label>
-          <textarea
-            class="form-textarea"
-            name="user-comment"
-            id="user-comment"
-          ></textarea>
-        </div>
-        
-        <button class="form-btn btn" type="submit">Send</button>
-      </form>
-     
-</div>
-</div>
+      </div>
+      <div class="rent-form-box">
+        <label class="rent-form-field" for="user-email">Email</label>
+        <input
+          id="user-email"
+          name="user-email"
+          type="email"
+          class="rent-form-input"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          required
+        />
+      </div>
+      <div class="rent-form-box">
+        <label class="rent-form-field" for="user-phone">Phone number</label>
+        <input
+          id="user-phone"
+          name="user-phone"
+          type="tel"
+          class="rent-form-input"
+          pattern="+[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          required
+        />
+      </div>
+      <div class="rent-form-box">
+        <label class="rent-form-field" for="user-comment">Comment</label>
+        <textarea
+          id="user-comment"
+          name="user-comment"
+          type="text"
+          class="rent-form-input"
+        ></textarea>
+      </div>
+      <button
+        class="rent-button modal-open-button"
+        type="submit"
+        data-modal-open
+      >
+        Send
+        <svg class="rent-button-svg" width="18px" height="8px" ;>
+          <use href="/project-group-20/assets/icons.svg-b5497d79.svg#icon-arrow-stroke-right"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
 </section>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" data-modal-close class="modal-button-close">
+      <svg class="modal-icon" width="20px" height="20px">
+        <use href="/project-group-20/assets/icons.svg-b5497d79.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <img class="rent-modal-img" src="/project-group-20/assets/img yaht-ee2ac9d6.png" width="287px" />
+    <p class="rent-modal-p">Thank you</p>
+    <div class="rent-modal-text">
+      Thank you for choosing Yacht Adventures, your booking details have been
+      received and our team will be in touch shortly to confirm your reservation
+      and provide any additional information or assistance you may need.
+    </div>
+  </div>
+</div>
+
+
+
       <!-- Polina Lining -->
       
 <!-- Pol Li -->
@@ -501,7 +518,6 @@
 
   </div>
 </section>
-   
     </main>
     <!-- Pryadko Mariya -->
     <footer class="footer">
@@ -567,5 +583,6 @@
     <script src="https://unpkg.com/body-scroll-lock@3.1.5/lib/bodyScrollLock.min.js"></script>
     
     
+    <script src="./js/modal.js"></script>
   </body>
 </html>
