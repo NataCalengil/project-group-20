@@ -1,27 +1,16 @@
-/*-About--*/
-
-
-  
-
- 
-   .about{
-     padding:80px 40px;
-  
-   }
-  
    .about-text{
-     color: #F6F5EF;
-   font-family: DM Sans;
-   font-size: 24px;
-   font-style: normal;
-   font-weight: 500;
-   line-height: 120%;
-   letter-spacing: -1.08px;
+      color: #F6F5EF;
+      font-family: DM Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: -1.08px;
 
 
   
    }
-   .-about-yacht-text{
+   .about-yacht-text{
      color: #BEC7C2;
      font-family: DM Sans;
      font-size: 24px;
@@ -32,50 +21,70 @@
   
    .about-item{
     color: #F6F5EF;
-   font-family: DM Sans;
-   font-size: 14px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 140%;
-   letter-spacing: -0.28px;
-   width: 160px;
-   height: auto;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    width: 160px;
+    height: auto;
   
   
    }
    .about-list{
-     display: flex;
+      display: flex;
       flex-direction:row;
       margin: 40px 0;
       gap: 14px;
   
    }
    .about-yacht-look-list{
-    display:flex;
-    flex-direction: column;
-    gap:24px;
+      display:flex;
+      flex-direction: column;
+      gap:24px;
    }
+
+    .about-img {
+      width: 335
+      px;
+    }
+      
+    .about-images {
+      width: 533px;
+    }
+      
+    .about-img-shadow {
+      width: 260px;
+    }
+
+    .about-yacht-look {
+      margin: 0 10px;
+      width: 320px;
+      padding: 0 10px;
+    }
   
    /*------------- Media  About-------------*/
   
    @media screen and (min-width: 767px) {
+
      .container-about{
-   max-width: 767px;
+      max-width: 767px;
      }
+
      .about-text{
-       color: #F6F5EF;
-     font-family: DM Sans;
-     font-size: 24px;
-     font-style: normal;
-     font-weight: 500;
-     line-height: 120%;
-     letter-spacing: -1.08px;
-     margin-left: 20px;
-     margin-right: 20px;
-  
-     max-width: 335px;
-  
-     }
+        color: #F6F5EF;
+        font-family: DM Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: -1.08px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 335px;
+      }
+
      .about-yacht-text{
        color: #BEC7C2;
        font-family: DM Sans;
@@ -84,105 +93,132 @@
        font-weight: 500;
        line-height: 120%;
      }
+
      .about-list{
-       display: flex;
+        display: flex;
         flex-direction:row;
-        margin-left: 20px;
+        margin-left: 304px;
         margin-right: 20px;
         margin-top: 40px;
         gap: 14px;
       }
+
      .about-item{
-      color: #F6F5EF;
-     font-family: DM Sans;
-     font-size: 14px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: 140%;
-     letter-spacing: -0.28px;
-     width: 160px;
-     height: auto;
-  
-     }
+       color: #F6F5EF;
+       font-family: DM Sans;
+       font-size: 14px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 140%;
+       letter-spacing: -0.28px;
+       width: 160px;
+       height: auto;
+      }
+
      .about-yacht-look-list{
-      justify-content: center;
-    flex-direction: row;
-    align-items: center;
-}
-     .about-yacht-look-item{
-       margin-top: 24px;
-       margin-left: 20px;
-       margin-right: 20px;
-  
+       justify-content: center;
+       flex-direction: row;
+       align-items: center;
       }
   
+      .about-yacht-look {
+        width: 704px;
+        margin: 0 auto;
+      }
+
    }
   
-   @media screen  and (min-width: 1279px) {
-     .container-about{
-       max-width: 768px;
-         }
-    .about-text{
-     font-family: DM Sans;
-     font-size: 32px;
-     font-style: normal;
-     font-weight: 500;
-     line-height: 120%;
-     letter-spacing: -1.44px;
-     width: 514px;
-  
-     margin-bottom: 32px;
-     margin-left: 32px;
-   }
+@media screen  and (min-width: 1279px) {
+    
+    .container-about {
+        max-width: 768px;
+    }
+
+    .about-text {
+      font-family: DM Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: -1.44px;
+      min-width: 514px;
+      margin-bottom: 32px;
+      margin-right: 282px;
+    }
+
    .about-yacht-text{
      font-family: DM Sans;
      font-size: 32px;
      font-style: italic;
      font-weight: 500;
      line-height: 120%;
-   }
-   }
+    }
+
+    .about-yacht-look-list {
+      flex-direction: row;
+      align-items: baseline;
+      gap: 64px;
+    }
+
+    .about-item {
+      font-family: DM Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.32px;
+      width: 183px;
+      height: auto;
+      margin-left: auto;
+    }
+
+    .about-yacht-look {
+      width: 1200px;
+    }
+
+    .about-img {
+      width: 308px;
+    }
+
+    .about-images {
+      width: 533px;
+    }
+
+    .about-img-shadow {
+      width: 260px;
+    }
+
+}
   
   
-   .about-item{
-  
-   font-family: DM Sans;
-   font-size: 16px;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 140%;
-   letter-spacing: -0.32px;
-   width: 183px;
-   height: auto;
-   margin-left: auto;
-   }
+
   
   
   
   
-   @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+
+  .about-text-container {
+    display: flex;
+  }
   
-     .container-about{
-  
-       display: flex;
-       flex-direction:row;
-       max-width: 1280px;
-  
-     }
-  
-  
-   .about-list{
-   margin-top: 0;
-   padding-top: 0;
-     gap: 32px;
-  
-   }
-   .about-item{
-  
-     width: 183px;
+  .container-about{
+    display: flex;
+    flex-direction:row;
+    max-width: 1280px;
+  }
+
+  .about-list{
+    margin-top: 0;
+    padding-top: 0;
+    gap: 32px;
+    margin-left: 0;
+
+  }
+
+  .about-item {
+    width: 183px;
     height: auto;
+  } 
   
-  
-    } 
-  
-   }
+}
