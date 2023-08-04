@@ -13,7 +13,18 @@ footer {
 }
 
 /* Mobile */
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
+    .position {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .footer_container {
+        width: 704px;
+        height: 280px;
+        margin-top: 40px;
+    }
+
     .container_footer {
         width: 335px;
         height: 334px;
@@ -24,23 +35,30 @@ footer {
     }
 
     .line_footer {
-        width: 335px;
-        height: 0px;
-        flex-shrink: 0;
-        stroke-width: 1px;
-        stroke: rgba(246, 245, 239, 0.20);
+       content: "";
+            width: 1000px;
+            height: 0px;
+            flex-shrink: 0;
+            stroke-width: 1px;
+            stroke: rgba(246, 245, 239, 0.10);
+            border: none;
+            height: 1px;
+            margin-bottom: 64px;
+            background-color: #f6f5ef33;
     }
 
     .footer_logo_and_title {
         display: flex;
         align-items: center;
-        padding-top: 44px;
-        padding-bottom: 44px;
+        margin-bottom: 44px;
         gap: 8px;
+        fill: white;
     }
 
     .icon_footer_yacht {
-        fill: var(--white);
+        fill: #BEC7C2;
+        width: 18px;
+        height: 18px;
     }
 
     .menu_footer {
@@ -49,15 +67,10 @@ footer {
         gap: 14px;
     }
 
-    .social_footer {
-        padding-top: 40px;
-    }
-
     .social_footer_text {
         margin-bottom: 16px;
     }
 
-    .text_main_footer {}
 
     .tekst_vnizu_stranici {
         color: rgba(246, 245, 239, 0.50);
@@ -67,10 +80,6 @@ footer {
         font-weight: 400;
         line-height: 118%;
         letter-spacing: 0.36px;
-    }
-
-    .text_main_footer {
-        /* margin-bottom: 16px; */
     }
 
     .social_icons {
@@ -84,101 +93,217 @@ footer {
         fill: var(--white);
     }
 
+    /* circle */
+    .container_vnizu_stranici::after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 420px;
+        height: 420px;
+        transform: rotate(-44.916deg);
+        flex-shrink: 0;
+        border-radius: 420px;
+        opacity: 0.60;
+        background: #91AFBA;
+        filter: blur(100px);
+        top: 259px;
+        right: 5px;
+        z-index: 0;
+        overflow: hidden;
+    }
+
     .tekst_vnizu_stranici_container {
         padding-top: 40px;
         padding-bottom: 14px;
-        /* justify-content: center */
     }
 
     .spisok_vnizu_stranici {
         display: flex;
         gap: 14px;
-        padding-top: 40px;
+        margin-top: 40px;
         padding-bottom: 14px;
         justify-content: center;
     }
-}
-
-
-
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-
-    .line_footer {
-        width: 704px;
-        height: 0px;
-        flex-shrink: 0;
-    }
-
-    .container_logo_and_title {
-        margin-right: 135px;
-        margin-top: 69px;
-        display: inline-block;
-    }
-
-    .menu_footer {
-        display: inline-block;
-
-    }
-
-    .social_footer {
-        display: inline-block;
-        margin-left: 143px;
-    }
 
     .container_menu_footer {
-        display: inline-block;
-    }
-
-    .social_icons {
-        display: flex;
-        gap: 16px;
-        margin-top: 16px;
-    }
-
-    .tekst_vnizu_stranici_container {
-        margin-top: 100px;
-        margin-bottom: 16px;
-    }
-
-    .tekst_vnizu_stranici {
-        color: rgba(246, 245, 239, 0.50);
-        text-align: center;
-        font-family: DM Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 118%;
-        letter-spacing: 0.42px;
-    }
-
-    .spisok_vnizu_stranici {
-        display: flex;
+        margin-bottom: 40px;
+        justify-content: center; /*----*/
     }
 }
 
-.ramka {
+
+          /* Tablet */
+          @media screen and (min-width: 768px) {
+              .position {
+                  position: relative;
+                  overflow: hidden;
+              }
     
-}
+              .footer_container {
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 100px;
+              }
+    
+              .menu_footer {
+                
+                  display: flex;
+                  flex-direction: column;
+                  gap: 24px;
+              }
+    
+              .icon_settings {
+                  fill: white;
+              }
+    
+                .text_main_footer_log {
+                    color: var(--white, #F6F5EF);
+                        font-family: DM Sans;
+                    margin-bottom: 155px;
+                 
+                }
 
-.logo_and_title {
-    display: flex;
-}
+              .footer_logo_and_title {
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+              }
+    
+              .icon_footer_yacht {
+                margin-left: 250px;
+                margin-bottom: 159px;
+                  fill: #BEC7C2;
+              }
+    
+              .social_footer {
+                margin-right: 250px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 16px;
+              }
+    
+              .container_menu_footer {
+                  display: inline-block;
+              }
+    
+              .social_icons {
+                  display: flex;
+                  gap: 16px;
+              }
+    
+              .social_media_link {
+                  fill: white;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+              }
+    
+              .tekst_vnizu_stranici {
+                  color: rgba(246, 245, 239, 0.50);
+                  text-align: center;
+                  font-family: DM Sans;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 118%;
+                  letter-spacing: 0.42px;
+              }
+    
+              .spisok_vnizu_stranici {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 32px;
+              }
+    
+              .container_vnizu_stranici {
+                  margin-bottom: 16px;
+              }
+    
+              .container_vnizu_stranici::after {
+                  left: 220px;
+              }
+    
+              .line_footer {
+                    content: "";
+                  width: 1700px;
+                  height: 0px;
+                  flex-shrink: 0;
+                  stroke-width: 1px;
+                  border: none;
+                  height: 2px;
+                    display: block;
+                  background-color: grey;
+                  margin-bottom: 64px;
+                    background-color: #f6f5ef33;
+              }
+          }
+    
+    
+    
+          .ramka {
+              display: flex;
+              border-radius: 6px;
+              border: 1px solid rgba(246, 245, 239, 0.50);
+              width: 32px;
+              height: 32px;
+              /* padding: 7.2px; */
+              justify-content: center;
+              align-items: center;
+              fill: white;
+              transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+    
+    
+    
+          .logo_and_title {
+              display: flex;
+          }
+    
+    
+          .text_main_footer {
+          
+              color: #F6F5EF;
+              font-family: DM Sans;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 118%;
+              letter-spacing: 0.42px;
+              text-transform: uppercase;
+          }
+    
+          @media only screen and (min-width: 1280px) {
+              .line_footer {
+                  width: 1216px;
+                  height: 0px;
+                  flex-shrink: 0;
+                  stroke-width: 1px;
+                  stroke: rgba(246, 245, 239, 0.10);
+                  border: none;
+                  height: 2px;
+                  background-color: grey;
+                  background-color: rgba(246, 245, 239, 0.20);
+              }
+    
+              .menu_footer {
+                  flex-direction: row;
+              }
+          }
+    
+          .container_vnizu_stranici::after {
+              right: 225px;
+          }
+    
+          .social_media_link:hover,
+          .social_media_link:focus {
+              fill: #BEC7C2;
+          }
+    
+          .ramka:hover {
+              fill: #BEC7C2;
+          }
 
-
-.text_main_footer {
-    color: #F6F5EF;
-    font-family: DM Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 118%;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
-
-
-
-
-
-
+          
